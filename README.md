@@ -10,13 +10,14 @@ Then use this image to build the binary which you then can [flash to the ESP8266
 ### Install Docker
 Follow the instructions at [https://docs.docker.com/](https://docs.docker.com/) → 'Get Started' (orange button top right).
 
+### build the Docker image
+`git clone https://github.com/makr0/docker-nodemcu-build.git`
+Start Docker and change to the directory of this README. Then run:
+``docker build -t nodemcu-build .``
+
 ### Clone the NodeMCU firmware repository
 `git clone https://github.com/nodemcu/nodemcu-firmware.git`
 
-### build the Docker image
-Start Docker and change to the directory of this README. Then run:
-``docker build -t nodemcu-build .``
-You need to do this every time you change the settings in runbuild.sh
 
 ### Run this image with Docker
 Start Docker and change to the NodeMCU firmware directory (in the Docker console). Then run:
