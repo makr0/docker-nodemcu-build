@@ -37,17 +37,8 @@ You can pass the following optional parameters to the Docker build like so `dock
 - `X_MODULES` list of modules to compile. if omitted adc,bit,cjson,file,gpio,http,i2c,mqtt,net,node,ow,pwm,rtctime,spi,tmr,uart,wifi,ws2812 are compiled
 
 ### Flashing the built binary
-There are several [tools to flash the firmware](http://nodemcu.readthedocs.org/en/dev/en/flash/) to the ESP8266. If you were to use [esptool](https://github.com/themadinventor/esptool) (like I do) you'd run:
-
-`esptool.py --port <USB-port-with-ESP8266> write_flash 0x00000 <NodeMCU-firmware-directory>/bin/nodemcu_[integer|float]_<Git-branch>.bin `
-
-## Support
-Don't leave comments on Docker Hub that are intended to be support requests. First, Docker Hub doesn't notify me when you write them, second I can't properly reply and third even if I could often it doesn't make much sense to keep them around forever and a day. Instead ask a question on [StackOverflow](http://stackoverflow.com/) and assign the `nodemcu` and `docker` tags.
-
-For bugs and improvement suggestions create an issue at [https://github.com/marcelstoer/docker-nodemcu-build/issues](https://github.com/marcelstoer/docker-nodemcu-build/issues).
+There are several [tools to flash the firmware](http://nodemcu.readthedocs.org/en/dev/en/flash/) to the ESP8266.
 
 ## Credits
 Thanks to [Paul Sokolovsky](http://pfalcon-oe.blogspot.com/) who created and maintains [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk).
-
-## Author
-[http://frightanic.com](http://frightanic.com)
+Original from [http://frightanic.com](http://frightanic.com)
