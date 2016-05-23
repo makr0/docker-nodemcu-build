@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER marcelstoer
+MAINTAINER makr0
 
 # If you want to tinker with this Dockerfile on your machine do as follows:
 # - git clone https://github.com/marcelstoer/docker-nodemcu-build
